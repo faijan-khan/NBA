@@ -35,7 +35,6 @@ An end-to-end computer vision system that automatically detects and tracks brand
 
 ```bash
 git clone https://github.com/faijan-khan/NBA.git
-cd NEW PIPELINE
 ```
 
 ### 2. Create a Virtual Environment
@@ -72,8 +71,9 @@ REDIS_URL=your-redis-url
 ```bash
 wsl
 redis-server
-redis-cli ping (you should see PONG)
+redis-cli ping
 ```
+(you should see PONG)
 ### Run Celery worker (new terminal)
 
 ```bash
