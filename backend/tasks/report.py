@@ -229,41 +229,6 @@ def generate_enhanced_report(base_dir, brand_keywords=None):
             ])
         pdf.create_styled_table(["Brand", "Total", "Rank", "Share %"], table_data)
 
-        # for plot_file in [
-        #     "brand_line_plot.png",
-        #     "brand_stacked_area_plot.png",
-        #     "brand_normalized_stacked_area_plot.png",
-        #     "brand_heatmap.png",
-        #     "brand_total_bar_plot.png",
-        # ]:
-        #     plot_path = os.path.join(plots_dir, plot_file)
-        #     if os.path.exists(plot_path):
-        #         pdf.add_page()
-        #         pdf.create_section_header(plot_file.replace("_", " ").replace(".png", "").title())
-        #         pdf.image(plot_path, x=20, w=170)
-        #         pdf.ln(10)
-
-        # for brand in brands:
-        #     series = df_analysis.set_index("Frame")[brand]
-        #     max_frame = series.idxmax() if series.max() > 0 else None
-        #     max_count = series.max()
-        #     non_zero = series[series > 0]
-        #     min_frame = non_zero.idxmin() if not non_zero.empty else None
-        #     min_count = non_zero.min() if not non_zero.empty else 0
-
-        #     pdf.add_brand_analysis_page(
-        #         brand=brand,
-        #         frame_texts=frame_texts,
-        #         max_frame=max_frame,
-        #         min_frame=min_frame,
-        #         max_count=max_count,
-        #         min_count=min_count,
-        #         frames_dir=frames_dir,
-        #         match_log=match_log
-        #     )
-        # Add this section to replace the existing plot integration in your report.py
-        # Replace the existing plot loop with this enhanced version:
-
         # Enhanced plot integration with better descriptions and layout
         plot_configs = [
             {
@@ -362,14 +327,3 @@ def generate_enhanced_report(base_dir, brand_keywords=None):
         print(f"✅ PDF saved to: {output_pdf}")
     except Exception as e:
         print(f"❌ Failed to generate PDF: {e}")
-# base_dir = "../#4 NUGGETS at #1 THUNDER _ FULL GAME 2 HIGHLIGHTS _ May 7, 2025"
-# brand_keywords = {
-#     "YouTubeTV": ["youtube", "tube"],
-#     "Coinbase": ["coin", "base", "coinbas", "coir", "coinb"],
-#     "StateFarm": ["state","statefarm", "astatefarm"],
-#     "MichelobULTRA": ["michel", "ultra", "michelao", "michelab", "michewb"],
-#     "Google": ["google", "gogl", "gogle", "googl", "gooogle"],
-#     "Tissot": ["tissot", "tiss", "tisso", "tissol", "tissst"],
-#     "ESPN": ["espn", "esn", "esp", "espm", "espnn"]
-# }
-# generate_enhanced_report(base_dir=base_dir, brand_keywords=brand_keywords)

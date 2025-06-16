@@ -83,13 +83,3 @@ def count_brands(merged_texts_path, base_output_dir, brand_keywords, threshold=8
 
     print(f"✅ Saved brand_analysis.csv to: {analysis_csv}")
     print(f"✅ Saved brand_totals.csv to: {totals_csv}")
-
-# count_brands(merged_texts_path="C:/Users/faiza/OneDrive/Desktop/New Pipeline/backend/downloads/epoch50/T94mVFIFPoQ/paddle_output/merged_texts.txt", base_output_dir="C:/Users/faiza/OneDrive/Desktop/New Pipeline/backend/downloads/epoch50/T94mVFIFPoQ/paddle_output", brand_keywords = { "YouTubeTV": ["youtube", "tube"],
-#     "Coinbase": ["coin", "base", "coinbas", "coir", "coinb"],
-#     "StateFarm": ["state","statefarm", "astatefarm"],
-#     "Michelob Ultra": ["michel", "ultra", "michelao", "michelab", "michewb"],
-#     "Google": ["google", "gogl", "gogle", "googl", "gooogle"],
-#     "Tissot": ["tissot", "tiss", "tisso", "tissol", "tissst"],
-#     "ESPN": ["espn", "esn", "esp", "espm", "espnn"],
-#     "Kia": ["kia", "kv"]
-# }, threshold=80)

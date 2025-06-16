@@ -32,8 +32,8 @@ def run_ocr_on_frames(frames_dir, output_dir, model):
     image_extensions = ('.jpg', '.jpeg', '.png')
     image_files = [f for f in os.listdir(frames_dir) if f.lower().endswith(image_extensions)]
     image_files.sort()
-    # max_files = 50
-    # image_files = image_files[:max_files]
+    max_files = 50
+    image_files = image_files[:max_files]
 
     for idx, img_file in enumerate(image_files):
         output_prefix = os.path.splitext(img_file)[0]
