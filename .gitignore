@@ -15,3 +15,5 @@ plots/
 downloads/
 paddle_output/
 single.py
+backend/tasks/inference/
+*.pdiparams
